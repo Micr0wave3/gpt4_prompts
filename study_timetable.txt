@@ -1,0 +1,97 @@
+Prompt:{
+
+Make an exam review schedule for 2 weeks. 
+Exclude any work on Saturdays. 
+2 study sessions in midday and evening on Sundays. 
+3 sessions in Monday, Tuesday, Wednesday, Thursday. 
+Only 2 sessions on Friday. 
+The subjects that need reviewing are IB Chemistry HL, IB German SL, IB Mathematics AA HL, IB Physics HL, IB English literature SL, IB History SL. 
+The subjects that need the most time are Chemistry, Physics and Mathematics each being 18 hours. 
+The subjects that have moderate amounts of review are History and English each being 10 hours. 
+German needs the least amount of time being 2 hours. 
+Include Morning, Midday and Evening study sessions no longer than 4 hours. 
+Include a time of the day both beginning and ending of the study sessions. 
+Balance all study sessions for each subject within a tolerance of 2 hours. 
+Include a free day each week on any day of the week. 
+In the end include the amount of hours allocated per subject. 
+Avoid having 2 HL or SL subjects in the same day, combining SL and HL. 
+On days with three subjects avoid putting 3 HL or 3 SL subjects but 2 HL or 2 SL subjects on such a day is ok if combined with the opposite. 
+Avoid making Saturday a free day. 
+Avoid putting HL lessons consecutively, as well as avoid putting SL lessons consecutively.
+
+}
+
+This generates a timetable for 2 weeks of studying.
+The output I received with gpt-4, 0.7 temperature, 2000 tokens max:{
+
+Week 1:
+
+Sunday:
+- Midday (12:00pm-3:00pm): IB Chemistry HL
+- Evening (4:00pm-7:00pm): IB English Literature SL
+
+Monday:
+- Morning (9:00am-12:00pm): IB Mathematics AA HL
+- Midday (1:00pm-3:00pm): IB German SL
+- Evening (4:00pm-7:00pm): IB History SL
+
+Tuesday:
+- Morning (9:00am-12:00pm): IB Physics HL
+- Midday (1:00pm-4:00pm): IB English Literature SL
+- Evening (5:00pm-8:00pm): IB Chemistry HL
+
+Wednesday:
+- Morning (9:00am-12:00pm): IB Mathematics AA HL
+- Midday (1:00pm-4:00pm): IB History SL
+- Evening (5:00pm-8:00pm): IB Physics HL
+
+Thursday:
+- Morning (9:00am-12:00pm): IB Chemistry HL
+- Midday (1:00pm-3:00pm): IB German SL
+- Evening (4:00pm-7:00pm): IB English Literature SL
+
+Friday:
+- Morning (9:00am-12:00pm): IB Mathematics AA HL
+- Midday (1:00pm-4:00pm): IB History SL
+
+Saturday: (Free Day)
+
+Week 2:
+
+Sunday:
+- Midday (12:00pm-3:00pm): IB Physics HL
+- Evening (4:00pm-7:00pm): IB English Literature SL
+
+Monday:
+- Morning (9:00am-12:00pm): IB Chemistry HL
+- Midday (1:00pm-3:00pm): IB German SL
+- Evening (4:00pm-7:00pm): IB History SL
+
+Tuesday:
+- Morning (9:00am-12:00pm): IB Mathematics AA HL
+- Midday (1:00pm-4:00pm): IB English Literature SL
+- Evening (5:00pm-8:00pm): IB Physics HL
+
+Wednesday:
+- Morning (9:00am-12:00pm): IB Chemistry HL
+- Midday (1:00pm-4:00pm): IB History SL
+- Evening (5:00pm-8:00pm): IB Mathematics AA HL
+
+Thursday:
+- Morning (9:00am-12:00pm): IB Physics HL
+- Midday (1:00pm-3:00pm): IB German SL
+- Evening (4:00pm-7:00pm): IB English Literature SL
+
+Friday:
+- Morning (9:00am-12:00pm): IB Chemistry HL
+- Midday (1:00pm-4:00pm): IB Mathematics AA HL
+
+Hours allocated per subject:
+- IB Chemistry HL: 18 hours
+- IB Mathematics AA HL: 18 hours
+- IB Physics HL: 18 hours
+- IB History SL: 10 hours
+- IB English Literature SL: 10 hours
+- IB German SL: 4 hours
+
+}
